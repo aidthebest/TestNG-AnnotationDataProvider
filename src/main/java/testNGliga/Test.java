@@ -32,12 +32,15 @@ public class Test {
         System.out.println("Test");
     }
 
-    @org.testng.annotations.Test(groups = "1", dataProvider = "testData")
+    @org.testng.annotations.Test(groups = "2", dataProvider = "testData")
     public void test2(String data) {
         System.out.println(data);
     }
 
-    @DataProvider(name = "testData", parallel = true)
+    @org.testng.annotations.Test(groups = "1", invocationCount = 2)
+    public void test3() {}
+
+    @DataProvider(name = "testData")
     public Object[][] getData() {
         return new Object[][]{{"Test"}, {"Test data: 1 2"}};
     }

@@ -30,12 +30,12 @@ public class Test2 {
     public void test4() {
     }
 
-    @DataProvider(name = "testData1", parallel = true)
+    @DataProvider(name = "testData1")
     public Object[][] getData1() {
         return new Object[][]{{"Test"}, {"Test data: three four"}};
     }
 
-    @DataProvider(name = "testData2", parallel = true)
+    @DataProvider(name = "testData2")
     public Object[][] getData2() {
         return new Object[][]{{"Test"}, {"Test data: true false"}};
     }

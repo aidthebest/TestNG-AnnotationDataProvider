@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="annotations" parallel="classes">
+    <groups>
+        <run>
+            <include name="1"></include>
+            <include name="2"></include>
+        </run>
+    </groups>
+    <test name="1">
+        <classes>
+            <class name="testNGliga.Test"/>
+        </classes>
+    </test>
+    <test name="2">
+        <classes>
+            <class name="testNGliga.Test2"/>
+        </classes>
+    </test>
+    <test name="3">
+        <classes>
+            <class name="testNGliga.Test3"/>
+        </classes>
+    </test>
+    <test name="4">
+        <classes>
+            <class name="testNGliga.Test4"/>
+        </classes>
+    </test>
+</suite>
